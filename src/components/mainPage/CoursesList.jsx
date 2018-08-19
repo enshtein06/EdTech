@@ -9,7 +9,8 @@ const courses = [
 		rating: "4.6",
 		price: "10.99",
 		description: "New description of this course. Description",
-		students: "32 269"
+		students: "32 269",
+		id: "1"
 	}, {
 		image: "https://udemy-images.udemy.com/course/240x135/1286908_1773_4.jpg",
 		title: "React course",
@@ -17,7 +18,8 @@ const courses = [
 		rating: "4.7",
 		price: "9.99",
 		description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-		students: "4128"
+		students: "4128",
+		id: "2"
 	}, {
 		image: "https://udemy-images.udemy.com/course/240x135/1227322_bdcd.jpg",
 		title: "React vs Angular vs Vue.js",
@@ -25,7 +27,8 @@ const courses = [
 		rating: "4.3",
 		price: "9.99",
 		description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-		students: "4129"
+		students: "4129",
+		id: "3"
 	}, {
 		image: "https://udemy-images.udemy.com/course/240x135/1652608_662b_4.jpg",
 		title: "Angular, React & Node Guide",
@@ -33,7 +36,8 @@ const courses = [
 		rating: "4.8",
 		price: "19.99",
 		description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-		students: "48"
+		students: "48",
+		id: "4"
 	}, {
 		image: "https://udemy-images.udemy.com/course/240x135/1299714_9faf_2.jpg",
 		title: "AI in Game development",
@@ -41,7 +45,8 @@ const courses = [
 		rating: "5",
 		price: "12.99",
 		description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
-		students: "7"
+		students: "7",
+		id: "5"
 	}
 ]
 

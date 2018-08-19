@@ -12,6 +12,7 @@ import WishlistPage from './sections/WishlistPage';
 import CartPage from './sections/CartPage';
 import ChatPage from './sections/ChatPage';
 import UserPage from './sections/UserPage';
+import CreateCourse from './containers/CreateCourse';
 
 class App extends Component {
   render() {
@@ -19,7 +20,8 @@ class App extends Component {
       <div className="app">
       	<Header />
       	<Route exact path="/" component={MainPage} />
-      	<Route path="/courses" component={CoursesPage} />
+      	<Route exact path="/courses" component={CoursesPage} />
+      	<Route path="/courses/creating" component={CreateCourse} />
       	<Route path="/teachers" component={TeachersPage} />
       	<Route path="/wishlist" component={WishlistPage} />
       	<Route path="/cart" component={CartPage} />

@@ -102,16 +102,109 @@ header .search__form .searchButton {
 	list-style: none;
 	font-weight: 100;
 	color: #777;
+	height: 100%;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
 }
 
 .navbar__list a {
 	color: #333;
 	text-decoration: none;
 	line-height: 6.5rem;
-	font-size: 2.3rem;
+	font-size: 2.2rem;
 	padding: .5rem 1rem;
 	transition: all ease-out .2s;
 }
+
+.navbar__list button {
+	padding: 1rem 1.5rem;
+	font-size: 2rem;
+	margin: 0 .5rem;
+	border-radius: 3px;
+	border: none;
+	cursor: pointer;
+	font-family: 'Montserrat', sans-serif;
+	position:relative;
+}
+
+/*////////////////////////////// BUTTON SIGNIN //////////////////////////////*/
+
+/*.button__signin {
+	background-color: #ED1C5B;
+	color: #fff;
+}*/
+.button__signin{
+  background:#ED1C5B;
+  color:#fff;
+  border:none;
+  transition:800ms ease all;
+  outline:none;
+}
+.button__signin:hover{
+  background:#fff;
+  color:#ED1C5B;
+}
+.button__signin:before,.button__signin:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: #ED1C5B;
+  transition:400ms ease all;
+}
+.button__signin:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+.button__signin:hover:before,.button__signin:hover:after{
+  width:100%;
+  transition:800ms ease all;
+}
+
+
+
+/*.button__signup {
+	background-color: #02B0F0;
+	color: #fff;
+}*/
+/*////////////////////////////// BUTTON SIGNIN //////////////////////////////*/
+.button__signup{
+	background:#02B0F0;
+	color:#fff;
+	border:none;
+	transition:800ms ease all;
+	outline:none;
+  }
+  .button__signup:hover{
+	background:#fff;
+	color:#02B0F0;
+  }
+  .button__signup:before,.button__signup:after{
+	content:'';
+	position:absolute;
+	top:0;
+	right:0;
+	height:2px;
+	width:0;
+	background: #02B0F0;
+	transition:400ms ease all;
+  }
+  .button__signup:after{
+	right:inherit;
+	top:inherit;
+	left:0;
+	bottom:0;
+  }
+  .button__signup:hover:before,.button__signup:hover:after{
+	width:100%;
+	transition:800ms ease all;
+  }
+
+
 
 .navbar__list a:hover {
 	border-radius: .3rem;
@@ -163,6 +256,10 @@ header .search__form .searchButton {
 /*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 /* Individual Course styles */
+
+.heart-was-not-checked {
+	color: #444 !important;
+}
 
 .course {
 	position: relative;
@@ -439,4 +536,143 @@ footer .footer__container .footer__container--right ul a {
 
 footer .footer__container .footer__container--right ul a:hover {
 	color: #914D80;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*///////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+/*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! REGISTER FORM !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*/
+.authOverlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	z-index: 100;
+	font-family: "Montserrat", sans-serif;
+	background: #02B0F0;
+}
+
+.authOverlay form {
+	width: 34rem;
+	height: 44rem;
+	background: #e6e6e6;
+	border-radius: .8rem;
+	box-shadow: 0 0 4rem -1rem #000;
+	margin: calc(50vh - 220px) auto;
+	padding: 2rem 3rem;
+	max-width: calc(100vw - 4rem);
+	font-family: "Montserrat", sans-serif;
+	position: relative;
+  }
+
+  .authOverlay form h2 {
+	margin: 1rem 0;
+	padding-bottom: 1rem;
+	color: #78788c; /*#57607E;*/
+	width: 25rem;
+	font-size: 2.3rem;
+	font-weight: 400;
+	border-bottom: 3px solid #78788c;
+  }
+
+.authOverlay form div {
+	width: 100%;
+	margin: 3rem auto;
+	position: relative;
+  }
+  
+.authOverlay form label {
+	font-size: 1.4rem;
+	position: absolute;
+	top: .2rem;
+	left: 1.2rem;
+	padding: .5rem 0;
+	transition: all ease .3s;
+	color: #777;
+	cursor: text;
+  }
+  
+.authOverlay form input {
+	width: 100%;
+	padding: .8rem 1.2rem;
+	border: none;
+	color: #333;
+	background: transparent;
+	border-bottom: .2rem solid #bebed2;
+	outline: none;
+	transition: all .3s;
+	cursor: text;
+  }
+  
+.authOverlay form input:focus {
+	border-bottom: 2px solid #78788c;
+  }
+  
+.authOverlay form input:focus ~ label,
+.authOverlay form input:valid ~ label,
+.authOverlay form label.emailToched {
+	top: -1.5rem;
+	left: .2rem;
+	font-size: 1.2rem;
+	color: #555;
+  }
+  
+.authOverlay form button {
+	float: right;
+	padding: 1rem 2rem;
+	background: transparent;
+	border: 2px solid #78788c;
+	color: #555;
+	cursor: pointer;
+	transition: all .2s;
+  }
+  
+.authOverlay form button:hover {
+	background: #78788c;
+	color: #fff;
+  }
+
+.authOverlay form .cancelButton {
+	font-size: 4rem;
+	color: #333;
+	cursor: pointer;
+	position: absolute;
+	top: .5rem;
+	right: 2rem;
+}
+
+.authOverlay.loginForm form{
+	height: 30rem;
+}
+
+.authInputInvalid {
+	border-bottom: .2rem solid #ED1C5B !important;
 }
